@@ -9,7 +9,7 @@ slug: /
 
 - Tạo file `custom-themes.ts` để tạo custom theme cho Material UI:
 
-```ts title="src/themes/custom-themes.ts"
+```ts
 import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 
 // Khai báo tên Palette ở cả 2 interface PaletteOptions và Palette
@@ -45,7 +45,7 @@ export default customTheme;
 
 - Tiếp theo ở file `App.tsx`:
 
-```tsx title="src/App.tsx"
+```tsx
 import { Box, CssBaseline } from "@mui/material";
 import {
   Experimental_CssVarsProvider as CssVarsProvider,
@@ -94,7 +94,7 @@ export default App;
 
 - Tiếp theo, ta tạo file `_variables.scss`. Mục đích file này là định nghĩa lại biến chứa tất cả colors mà chúng ta đã custom để có thể sử dụng trong scss.
 
-```scss title="src/themes/_variables.scss"
+```scss
 $bg-text-input: var(--palette-bg-text-input);
 ```
 
@@ -108,7 +108,7 @@ $bg-text-input: var(--palette-bg-text-input);
 
 - Giờ ta tạo component `Input` được custom lại từ component `TextField` của Material UI:
 
-```scss title="src/components/Input.module.scss"
+```scss
 @import "src/themes/variables";
 
 .Input {
@@ -121,7 +121,7 @@ $bg-text-input: var(--palette-bg-text-input);
 }
 ```
 
-```tsx title="src/components/Input.tsx"
+```tsx
 import React from "react";
 import { TextField, TextFieldProps } from "@mui/material";
 import styles from "./Input.module.scss";
@@ -145,7 +145,7 @@ export default Input;
 
 - Nếu ta không muốn tạo file `.scss` thì ta có thể sử dụng **inline styles** bằng thuộc tính `sx`:
 
-```tsx title="src/components/Input.tsx"
+```tsx
 import React from "react";
 import { TextField, TextFieldProps } from "@mui/material";
 
@@ -180,7 +180,7 @@ Chỉ nên viết **inline styles** nếu số lượng CSS Properties cần tù
 
 - Tiếp theo ta sẽ tạo nút để di chuyển giữa **light mode** và **dark mode**: Ta sử dụng hook `useColorScheme()` do Material UI cung cấp.
 
-```tsx title="src/components/ToggleModeButton.tsx"
+```tsx
 import { Button, useColorScheme } from "@mui/material";
 
 const ToggleModeButton = () => {
@@ -204,3 +204,7 @@ const ToggleModeButton = () => {
 ![1696864351605](image/customize-theme-dark-and-light-mode-mui/1696864351605.png "Light mode")
 
 ![1696864372401](image/customize-theme-dark-and-light-mode-mui/1696864372401.png "Dark mode")
+
+## Kết quả
+
+- Link project: https://stackblitz.com/edit/cehrfkh-muszvv-nfn8pi-custom-dark-and-light-theme-mui?file=README.md
