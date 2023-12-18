@@ -66,7 +66,8 @@ sdkmanager --licenses
 
 :::note
 
-- Ta sẽ kết nối thiết bị Android thông qua dây cáp USB và ứng dụng Vysor
+- Ta sẽ kết nối thiết bị Android thông qua dây cáp USB và ứng dụng Vysor.
+- Xem thêm: Cách kết nối Laptop/PC với thiết bị Android thông qua Wifi (kết nối không cần dùng dây cáp USB) ở bên dưới.
 
 :::
 
@@ -80,7 +81,7 @@ sdkmanager --licenses
 
 ![1702889384880](image/react-native-setup/1702889384880.png)
 
-- Tiếp theo, vào **Cài đặt** -> **Cài đặt bổ sung** -> **Tùy chọn nhà phát triển** và bật các tùy chọn ở dưới. Sau khi bật xong các tùy chọn đó, nên khởi động lại máy để đảm bảo nó hoạt động.
+- Tiếp theo, vào **Cài đặt** -> **Cài đặt bổ sung** -> **Tùy chọn nhà phát triển** và bật các tùy chọn ở dưới. Sau khi bật xong các tùy chọn đó, ta phải khởi động lại máy để đảm bảo nó hoạt động.
 
 ![1702889912099](image/react-native-setup/1702889912099.png)
 
@@ -127,3 +128,63 @@ npm start
 ![1702892496772](image/react-native-setup/1702892496772.png)
 
 ![1702893195080](image/react-native-setup/1702893195080.png)
+
+## Kết nối Laptop/PC với thiết bị Android không dây
+
+- Ở trên, ta đã dùng dây cáp USB để kết nối giữa Laptop/PC và thiết bị Android. Ở phần này, ta sẽ tìm hiểu cách kết nối khác thông qua Wifi.
+
+:::caution
+
+- Vì là kết nối thông qua Wifi nên hãy đảm bảo thiết bị Android và Laptop/PC của bạn kết nối tới cùng một wifi
+
+:::
+
+### Trên thiết bị Android
+
+- Vào **Cài đặt** -> **Cài đặt bổ sung** -> **Tùy chọn nhà phát triển** -> **Gỡ lỗi không dây** -> Bật chế độ **Gỡ lỗi không dây**
+
+![1702914515573](image/react-native-setup/1702914515573.png)
+
+:::caution
+
+- Lưu ý: Hãy đảm bảo rằng bạn vẫn bật 3 tùy chọn: **Gỡ lỗi USB**, **Cài đặt qua USB** và **Gỡ lỗi USB (Cài đặt bảo mật)** như ảnh trên
+
+:::
+
+- Tiếp đó, chọn **Ghép nối thiết bị bằng mã ghép nối**
+
+![1702912334892](image/react-native-setup/1702912334892.png)
+
+### Trên Laptop/PC
+
+- Lúc này ta sẽ có 2 thông tin quan trọng để kết nối là **Địa chỉ IP** và **Mã ghép nối Wi-Fi**, mở terminal lên và thực hiện ghép nối tới thiết bị Android thông qua lệnh:
+
+```
+adb pair <<IP>>
+```
+
+![1702912541366](image/react-native-setup/1702912541366.png)
+
+- Tiếp theo ta sẽ connect tới thiết bị Android thông qua IP của nó bằng lệnh:
+
+```bash
+adb connect <<IP>>
+```
+
+:::caution
+
+- Địa chỉ IP để connect là địa chỉ IP hiển thị như ảnh dưới:
+
+![1702912738425](image/react-native-setup/1702912738425.png)
+
+:::
+
+![1702912816550](image/react-native-setup/1702912816550.png)
+
+![1702912860956](image/react-native-setup/1702912860956.png)
+
+:::success
+
+- Vậy là ta đã kết nối không dây thành công. Giờ ta vẫn có thể thao tác điều khiển điện thoại trên Laptop/PC thông qua ứng dụng Vysor.
+
+:::
