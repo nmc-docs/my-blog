@@ -118,4 +118,12 @@ npm start
 
 - Sau đó nhấn phím "a" để nó chạy trên Android. Quá trình chạy lần đầu có thể sẽ hơi lâu (tầm 5 phút).
 
+:::caution
+
+- Lưu ý: trong quá trình chạy, có thể thiết bị Android của bạn sẽ yêu cầu cho phép cài đặt ứng dụng lên máy, hãy chấp nhận để app có thể chạy trên thiết bị của bạn
+
+:::
+
 ![1702892496772](image/react-native-setup/1702892496772.png)
+
+![1702893195080](image/react-native-setup/1702893195080.png)
