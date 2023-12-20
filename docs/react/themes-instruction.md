@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Cách bố trí các file style (SCSS, Tailwind) trong Reactjs

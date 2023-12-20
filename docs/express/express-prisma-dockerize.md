@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Tạo server đơn giản bằng Express + Prisma và triển khai bằng Docker
+# Express + Prisma + Docker
 
 ## Cấu trúc cây thư mục
 
@@ -63,7 +63,7 @@ npx tsc --init
 npx prisma init
 ```
 
-```prisma title="back-end/prisma/schema.prisma"
+```prisma title="schema.prisma"
 generator client {
   provider = "prisma-client-js"
 }
@@ -101,7 +101,7 @@ npx prisma generate
 
 - Cấu hình để sử dụng biến môi trường trong file **.env**:
 
-```ts title="back-end/src/configs/env-config.ts"
+```ts title="src/configs/env-config.ts"
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -115,7 +115,7 @@ export default env;
 
 - Tạo type cho User:
 
-```ts title="back-end/src/types/user-types.ts"
+```ts title="src/types/use-types.ts"
 export type TUser = {
   name: string;
   email: string;
@@ -125,7 +125,7 @@ export type TUser = {
 
 - Tạo hàm controller:
 
-```ts title="back-end/src/controllers/user-controller.ts"
+```ts title="src/controllers/user-controller.ts"
 import { Response, Request } from "express";
 import { PrismaClient } from "@prisma/client";
 
@@ -165,7 +165,7 @@ export default userController;
 
 - Tạo route:
 
-```ts title="back-end/src/routes/user-route.ts"
+```ts title="src/routes/user-route.ts"
 import { Router } from "express";
 import userController from "src/controllers/user-controller";
 
@@ -179,7 +179,7 @@ export default userRoute;
 
 - Hàm chính:
 
-```ts title="back-end/src/main.ts"
+```ts title="src/main.ts"
 import express, { Application } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -202,7 +202,7 @@ app.listen(env.PORT, () => {
 
 - Thêm biến môi trường vào file **.env**
 
-```.env title="back-end/.env"
+```.env
 PORT=8080
 DATABASE_URL="mysql://root:ptit_62699502@localhost:3306/antsadatabase"
 ```
@@ -256,7 +256,7 @@ DATABASE_URL="mysql://root:ptit_62699502@localhost:3306/antsadatabase"
 
 - Tạo **Dockerfile**:
 
-```Dockerfile title="back-end/Dockerfile"
+```Dockerfile
 FROM node:18-alpine AS build
 WORKDIR /usr/src/app
 COPY package*.json ./
@@ -276,14 +276,14 @@ CMD [ "npm", "start" ]
 
 - Tạo file **.dockerignore** để chỉ định file, thư mục mà Docker sẽ không không copy nó:
 
-```.ignore title="back-end/.dockerignore"
+```.ignore
 node_modules
 build
 ```
 
 - Tạo file **docker-compose.yaml** để chạy 2 container database và backend:
 
-```yaml title="docker-compose.yaml"
+```yaml
 version: "3.8"
 
 services:
@@ -321,12 +321,12 @@ networks:
 
 - Tạo 2 file biến môi trường trong thư mục **env** để sử dụng trong docker-compose:
 
-```env title="backend.env"
+```env title="env/backend.env"
 PORT=8080
 DATABASE_URL=mysql://root:ptit_15092002@mysqldb:3306/antsadatabase
 ```
 
-```env title="database.env"
+```env title="env/database.env"
 MYSQL_DATABASE=antsadatabase
 MYSQL_ROOT_PASSWORD=ptit_15092002
 ```

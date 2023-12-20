@@ -1,5 +1,5 @@
 ---
-idebar_position: 5
+sidebar_position: 1
 ---
 
 # Setup project React native chạy trên thiết bị Android thật

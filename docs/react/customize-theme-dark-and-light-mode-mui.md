@@ -1,6 +1,5 @@
 ---
-sidebar_position: 1
-slug: /
+sidebar_position: 2
 ---
 
 # Tùy chỉnh màu sắc chế độ light, dark mode trong Material UI
@@ -201,10 +200,10 @@ const ToggleModeButton = () => {
 
 ## Kết quả
 
-![1696864351605](image/customize-theme-dark-and-light-mode-mui/1696864351605.png "Light mode")
+![1703086298709](image/customize-theme-dark-and-light-mode-mui/1703086298709.png)
 
-![1696864372401](image/customize-theme-dark-and-light-mode-mui/1696864372401.png "Dark mode")
+![1703086314030](image/customize-theme-dark-and-light-mode-mui/1703086314030.png)
 
-## Kết quả
+## Source code
 
 - Link project: https://stackblitz.com/edit/cehrfkh-muszvv-nfn8pi-custom-dark-and-light-theme-mui?file=README.md
