@@ -19,14 +19,14 @@ sidebar_position: 2
 
 ## Cách crack Navicat Premium
 
-- Tải về và giải nén file sau đây: [Crack Navicat Premium](https://drive.google.com/file/d/1wOrMSHY7U0b_XEa0DzcezVMyEZmgyndv/view?usp=sharing)
+- Tải về và giải nén file sau đây: [Crack Navicat Premium](https://drive.google.com/file/d/1rkuf3SXrivL8cQAOp5dXuU4Ltm-1Zj7w/view?usp=sharing)
 - Sau khi giải nén, tiến hành chạy file sau để cài đặt:
 
-![1703953975368](image/navicat-installation/1703953975368.png)
+![1704092255776](image/navicat-installation/1704092255776.png)
 
-- Sau khi cài đặt sau, ta copy 2 file bên dưới vào thư mục cài đặt Navicat Premium (thường nằm ở **C:\Program Files\PremiumSoft\Navicat Premium 16**)
+- Sau khi cài đặt sau, ta copy 2 file bên dưới ở thư mục Crack vào thư mục cài đặt Navicat Premium (thường nằm ở **C:\Program Files\PremiumSoft\Navicat Premium 16**)
 
-![1703954196714](image/navicat-installation/1703954196714.png)
+![1704092276430](image/navicat-installation/1704092276430.png)
 
 ![1703954244074](image/navicat-installation/1703954244074.png)
 
