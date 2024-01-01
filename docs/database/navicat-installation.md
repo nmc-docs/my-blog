@@ -17,16 +17,16 @@ sidebar_position: 2
 
 - Navicat Premium là một công cụ mạnh mẽ và linh hoạt cho phép bạn quản lý và phát triển cơ sở dữ liệu của mình một cách hiệu quả. Nó là một lựa chọn tuyệt vời cho các nhà phát triển, quản trị viên cơ sở dữ liệu và người dùng kinh doanh.
 
-## Cách crack Navicat Premium
+## Cách crack Navicat Premium 16.3.0
 
-- Tải về và giải nén file sau đây: [Crack Navicat Premium](https://drive.google.com/file/d/1rkuf3SXrivL8cQAOp5dXuU4Ltm-1Zj7w/view?usp=sharing)
+- Tải về và giải nén file sau đây: [Crack Navicat Premium](https://drive.google.com/file/d/1dzy9M2aGKuFUaQZRMmBtgGHbudFWHEae/view?usp=sharing) (Pass giải nén vui lòng liên hệ [Facebook](https://www.facebook.com/minhchi1509))
 - Sau khi giải nén, tiến hành chạy file sau để cài đặt:
 
-![1704092255776](image/navicat-installation/1704092255776.png)
+![1704098959633](image/navicat-installation/1704098959633.png)
 
 - Sau khi cài đặt sau, ta copy 2 file bên dưới ở thư mục Crack vào thư mục cài đặt Navicat Premium (thường nằm ở **C:\Program Files\PremiumSoft\Navicat Premium 16**)
 
-![1704092276430](image/navicat-installation/1704092276430.png)
+![1704098978603](image/navicat-installation/1704098978603.png)
 
 ![1703954244074](image/navicat-installation/1703954244074.png)
 
@@ -35,6 +35,8 @@ sidebar_position: 2
 :::caution
 
 - Lưu ý: KHÔNG ĐƯỢC CẬP NHẬT VERSION NẾU NÓ YÊU CẦU
+
+![1704099038448](image/navicat-installation/1704099038448.png)
 
 :::
 
