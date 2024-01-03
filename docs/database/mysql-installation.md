@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Hướng dẫn cài đặt MySQL
@@ -97,3 +97,13 @@ SELECT User, Host FROM mysql.user;
 ```
 
 :::
+
+## Start, Stop MySQL Server
+
+- Ta có thể thực hiện tắt, mở server MySQL bằng cách mở thanh tìm kiếm Windows và gõ **Services**:
+
+![1704123422841](image/mysql-installation/1704123422841.png)
+
+- Tìm đến service có tên **MySQL80** và click chuột phải vào nó, sau đó thực hiện Start, Stop MySQL Server
+
+![1704123510634](image/mysql-installation/1704123510634.png)
