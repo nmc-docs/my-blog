@@ -56,54 +56,14 @@ sidebar_position: 2
 
 ![1703089398243](image/mysql-installation/1703089398243.png)
 
-## Thêm mới user cho MySQL
-
-- Khi cấu hình cho MySQL, nó sẽ tự động tạo cho ta một username có tên **root** và mật khẩu như ta đã cấu hình ở trên
-- Khi tạo một Connection với MySQL , ta phải điền username tồn tại trong hệ thống user của MySQL, nếu không sẽ không connect được.
-- Để có thể tạo và cấp toàn bộ quyền cho một user mới, ta làm như sau:
-
-* Mở cmd và gõ lệnh sau, sau đó nhập mật khẩu như ta đã cấu hình ở bên trên:
-
-```bash
-mysql -u root -p
-```
-
-![1703089529928](image/mysql-installation/1703089529928.png)
-
-- Giả sử ta muốn tạo mới một user có **username: minhchi1509** và **password: ptit_15092002**
-
-```bash
-CREATE USER 'minhchi1509'@'localhost' IDENTIFIED BY 'ptit_15092002';
-```
-
-- Sau khi tạo mới tài khoản, ta phải gán quyền cho nó, câu lệnh sau đây sẽ gán toàn bộ quyền cho user:
-
-```bash
-GRANT ALL PRIVILEGES ON *.* TO 'minhchi1509'@'localhost' WITH GRANT OPTION;
-```
-
-- Sau đó thực hiện làm mới các quyền để áp dụng thay đổi:
-
-```bash
-FLUSH PRIVILEGES;
-```
-
-:::note
-
-- Câu lệnh để xem tất cả các user trong MySQL:
-
-```bash
-SELECT User, Host FROM mysql.user;
-```
-
-:::
-
 ## Start, Stop MySQL Server
 
-- Ta có thể thực hiện tắt, mở server MySQL bằng cách mở thanh tìm kiếm Windows và gõ **Services**:
+- Ta có thể thực hiện tắt, mở server MySQL bằng cách sử dụng lệnh sau (Với chế độ Administrator):
 
-![1704123422841](image/mysql-installation/1704123422841.png)
+```bash
+net start mysql80
+```
 
-- Tìm đến service có tên **MySQL80** và click chuột phải vào nó, sau đó thực hiện Start, Stop MySQL Server
-
-![1704123510634](image/mysql-installation/1704123510634.png)
+```bash
+net stop mysql80
+```

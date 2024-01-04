@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Các thao tác với MongoDB
@@ -134,7 +134,6 @@ mongorestore <options>
 | `--dir`        | Chỉ định đường dẫn của thư mục chứa các file/folder backup để khôi phục                                                                                                                                                                              |
 | `--db`         | Chỉ định tên database cần được khôi phục.<br />- Nếu tên database không tồn tại trong thư mục backup thì MongoDB sẽ tạo mới database đó. <br />- Nếu không được chỉ định, nó sẽ đọc từ file backup và khôi phục lại tất cả các database có trong đó. |
 | `--collection` | Chỉ định những collections (tables) nào sẽ được khôi phục lại<br />- Nếu không được chỉ định, nó sẽ khôi phục tất cả các collections từ file backup                                                                                                  |
-|                |                                                                                                                                                                                                                                                      |
 
 - Ví dụ:
 
