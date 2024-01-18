@@ -24,7 +24,7 @@ javac --version
 
 ### Bước 2: Cài đặt Android SDK
 
-- Tải file zip SDK Tools Package: [tại đây](https://drive.google.com/file/d/1BXfk5exe32hehWjgTWVvWcOPk2C6nwSa/view?usp=sharing)
+- Tải file zip SDK Tools Package: [tại đây](https://developer.android.com/studio#command-line-tools-only)
 - Sau khi tải về và giải nén ra, ta sẽ thấy bên trong có một thư mục tên **cmdline-tools**
 - Sau đó, ta vào đường dẫn: `C:\Users\MINH CHI\AppData\Local` và tạo một thư mục mới tên **android-sdk**
 - Copy thư mục **cmdline-tools** vào bên trong thư mục **android-sdk** vừa mới tạo
