@@ -44,14 +44,58 @@ Nếu project có sử dụng dark, light mode thì hãy sử dụng `:root` đ�
   - **\_component.scss**
   - **\_global.scss**
 
-![1701363911756](image/themes-instruction/1701363911756.png)
+![1708503867703](image/themes-instruction/1708503867703.png)
 
-- Còn lại, nếu muốn thêm color,... hay custom CSS Property nào đó, hãy cấu hình ở trong file **tailwind.config.js**
+- Còn nếu muốn custom các CSS-Property (thay thế file **\_variables.scss** và **\_animation.scss**), hãy custom trực tiếp trong file **tailwind.config.js**
+- Nếu trong project sử dụng nhiều loại theme (như light/dark mode), hãy sử dụng thư viện **tw-colors**, thư viện này tự động map các color mà ta đã khai báo ứng với từng loại theme.
 
-![1701363984703](image/themes-instruction/1701363984703.png)
+```bash
+npm i -D tw-colors
+```
 
-:::tip
+```js title="tailwind.config.js"
+const { createThemes } = require("tw-colors");
 
-Tương tự như ở trên, nếu có sử dụng light, dark mode, hãy khai báo color ở `:root` và `:root.dark` và thêm tên biến ứng với màu đó ở trong file **tailwind.config.js**
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  plugins: [
+    createThemes(
+      {
+        light: {
+          primary: "#FF73B3",
+          secondary: "#6F72B9",
+        },
+        dark: {
+          primary: "#9473B3",
+          secondary: "#6972B9",
+        },
+      },
+      {
+        defaultTheme: "light",
+      }
+    ),
+  ],
 
-:::
+  theme: {
+    extend: {
+      colors: {
+        "indian-orange": "#FF7722",
+      },
+      boxShadow: {
+        high: "0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 4px 14px 0 rgba(0, 0, 0, 0.12)",
+      },
+      keyframes: {
+        wiggle: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1.5s ease-in-out infinite",
+      },
+    },
+  },
+  darkMode: "class",
+};
+```
