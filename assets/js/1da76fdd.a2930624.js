@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhtml=self.webpackChunkhtml||[]).push([[338],{691:e=>{e.exports=JSON.parse('{"title":"React","slug":"/category/react","permalink":"/my-blog/category/react","navigation":{"next":{"title":"T\u1ea1o Drag and Drop files trong React","permalink":"/my-blog/"}}}')}}]);

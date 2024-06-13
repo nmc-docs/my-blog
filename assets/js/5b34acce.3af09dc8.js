@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreactjs=self.webpackChunkreactjs||[]).push([[595],{4335:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"React","slug":"/category/react","permalink":"/my-blog/category/react","sidebar":"tutorialSidebar","navigation":{"next":{"title":"T\u1ea1o Drag and Drop files trong React","permalink":"/my-blog/"}}}}')}}]);
