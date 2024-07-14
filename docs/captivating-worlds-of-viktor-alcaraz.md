@@ -73,3 +73,9 @@ His work serves as a reminder of the power of photography to document, inspire, 
 ![1720974619903](image/captivating-worlds-of-viktor-alcaraz/1720974619903.png)
 
 As Viktor Alcaraz continues to explore new cities and capture the stories of their inhabitants, his legacy grows. His photographs are not just visual records; they are windows into the soul of urban life, offering glimpses of the beauty, struggle, and resilience that define us all. Through his work, Alcaraz invites us to see the world with fresh eyes and to find the extraordinary in the everyday.
+
+**_Author: Viktor Alcaraz_**
+
+**_Contact email: viktoralcaraz002@hotmail.com_**
+
+**_Copyright all rights reserved_**
