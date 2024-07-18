@@ -74,8 +74,8 @@ His work serves as a reminder of the power of photography to document, inspire, 
 
 As Viktor Alcaraz continues to explore new cities and capture the stories of their inhabitants, his legacy grows. His photographs are not just visual records; they are windows into the soul of urban life, offering glimpses of the beauty, struggle, and resilience that define us all. Through his work, Alcaraz invites us to see the world with fresh eyes and to find the extraordinary in the everyday.
 
-**_Author: Viktor Alcaraz_**
+**_Author: Nguyễn Minh Chí_**
 
-**_Contact email: viktoralcaraz002@hotmail.com_**
+**_Contact email: minhchico300kc@hotmail.com_**
 
 **_Copyright all rights reserved_**
